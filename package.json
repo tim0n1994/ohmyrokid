@@ -2,6 +2,7 @@
   "name": "world-patch",
   "version": "1.0.0",
   "description": "A JSUI Agent project",
+  "type": "module",
   "main": "app.js",
   "dependencies": {}
 }
