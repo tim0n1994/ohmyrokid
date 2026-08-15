@@ -1,0 +1,7 @@
+{
+  "name": "world-patch",
+  "version": "1.0.0",
+  "description": "A JSUI Agent project",
+  "main": "app.js",
+  "dependencies": {}
+}
