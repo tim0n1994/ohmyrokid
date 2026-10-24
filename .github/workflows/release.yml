@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing preview tag to package
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-publish:
+    name: Verify and publish preview
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run World Patch tests
+        run: node tests/world.test.mjs
+
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          node --check app.js
+          for file in lib/*.js; do
+            node --check "$file"
+          done
+
+      - name: Package source preview
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          mkdir -p release-assets
+          git archive --format=tar.gz --prefix="world-patch-${RELEASE_TAG}/" "${GITHUB_SHA}"             -o "release-assets/world-patch-${RELEASE_TAG}.tar.gz"
+
+      - name: Publish GitHub preview release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          gh release create "${RELEASE_TAG}" release-assets/*.tar.gz             --repo "${GITHUB_REPOSITORY}"             --title "World Patch ${RELEASE_TAG}"             --generate-notes             --prerelease
