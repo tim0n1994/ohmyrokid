@@ -2,6 +2,8 @@
 
 [中文 README](README.md)
 
+[Preview release v0.1.0-preview.1](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.1)
+
 > Tell the glasses what you want reality to become.
 
 World Patch is a Rokid Glasses AIUI agent and hackathon prototype. It turns a natural-language intention into a path that can be inspected, executed step by step, and checked again:
