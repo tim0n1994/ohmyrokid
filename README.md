@@ -1,5 +1,7 @@
 # World Patch 现实补丁
 
+[English](README.en.md)
+
 > Tell the glasses what you want reality to become.
 >
 > 让眼镜理解你想要的现实，并带你把它改出来。
