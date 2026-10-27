@@ -2,6 +2,8 @@
 
 [English](README.en.md)
 
+[Preview release v0.1.0-preview.1](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.1)
+
 > Tell the glasses what you want reality to become.
 >
 > 让眼镜理解你想要的现实，并带你把它改出来。
