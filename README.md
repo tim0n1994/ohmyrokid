@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[Preview release v0.1.0-preview.2](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.2) · [MIT License](LICENSE)
+[Preview release v0.1.0-preview.2](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.2) · [MIT License](LICENSE) · [安全策略](SECURITY.md)
 
 > Tell the glasses what you want reality to become.
 >
