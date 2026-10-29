@@ -2,7 +2,7 @@
 
 [中文 README](README.md)
 
-[Preview release v0.1.0-preview.2](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.2) · [MIT License](LICENSE) · [Security policy](SECURITY.md)
+[Hackathon preview v0.1.0-preview.3](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.3) · [MIT License](LICENSE) · [Security policy](SECURITY.md)
 
 > Tell the glasses what you want reality to become.
 
@@ -25,6 +25,8 @@ A normal assistant returns a suggestion. World Patch tries to return the next wo
 The project uses the standard AIUI agent layout: AGENTS.md, app.json, app.js, and pages/.
 
 ## Verification boundary
+
+This is a public hackathon preview, not a production product. Source code, the Craft simulator, real deployment, visual acceptance, and glasses-device acceptance are separate evidence layers and cannot substitute for one another.
 
 - The real-device path depends on a cloud resource package, phone Bluetooth relay, network access, and AIUI runtime behavior.
 - The camera is suitable for scene state, not fine-grained component inspection.
