@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-[Preview release v0.1.0-preview.2](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.2) · [MIT License](LICENSE) · [安全策略](SECURITY.md)
+[Hackathon preview v0.1.0-preview.3](https://github.com/tim0n1994/ohmyrokid/releases/tag/v0.1.0-preview.3) · [MIT License](LICENSE) · [安全策略](SECURITY.md)
 
 > Tell the glasses what you want reality to become.
 >
@@ -40,6 +40,8 @@ Intent → Observe(W) → Compile(W*) → Diff → Patch → Act → Verify
 本地工程是标准 AIUI Agent 工程，包含 `AGENTS.md`、`app.json`、`app.js` 和 `pages/`。项目内已安装 `aiui-dev` 技能，提供 API、组件和单绿设计系统参考。
 
 ## 当前边界
+
+这是公开预览与黑客松原型，不是正式生产产品。源码、Craft 模拟器、真实部署、视觉验收和眼镜设备验收分别计证，不能相互替代。
 
 - 真机调试使用云端资源包，不依赖 USB/adb。
 - 眼镜通过蓝牙连接手机，再由手机访问互联网。
